@@ -1,0 +1,24 @@
+server:
+  port: 8000
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/users
+    username: postgres
+    password: 12345
+  data:
+    redis:
+      host: localhost
+      port: 6379
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
