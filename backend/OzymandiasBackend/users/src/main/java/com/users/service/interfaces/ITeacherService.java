@@ -1,10 +1,11 @@
 package com.users.service.interfaces;
 
+import com.users.model.DTO.LoginDTO;
 import com.users.model.DTO.teacher.TeacherRegisterDTO;
 import com.users.model.DTO.teacher.TeacherViewDTO;
 
 public interface ITeacherService {
-    String login(String email, String password);
+    String login(LoginDTO loginDTO);
     TeacherViewDTO create(TeacherRegisterDTO teacherRegisterDTO);
     TeacherViewDTO read(Integer pin);
     TeacherViewDTO update(TeacherRegisterDTO teacherRegisterDTO);

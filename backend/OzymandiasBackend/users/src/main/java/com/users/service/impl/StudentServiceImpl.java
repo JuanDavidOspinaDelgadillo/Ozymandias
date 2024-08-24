@@ -1,5 +1,6 @@
 package com.users.service.impl;
 
+import com.users.model.DTO.LoginDTO;
 import com.users.model.DTO.student.StudentRegisterDTO;
 import com.users.model.DTO.student.StudentViewDTO;
 import com.users.model.converter.StudentConverter;
@@ -17,7 +18,7 @@ public class StudentServiceImpl implements IStudentService {
     final StudentConverter converter;
 
     @Override
-    public String login(Integer email, String password) {
+    public String login(LoginDTO loginDTO) {
         return "login successfully";
     }
 

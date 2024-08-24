@@ -12,7 +12,7 @@ public class TeacherConverter {
 
     public Teacher teacherRegisterDTOToTeacher(TeacherRegisterDTO teacherRegisterDTO) {
         try {
-            return new Teacher(teacherRegisterDTO.getPersonalId(), teacherRegisterDTO.getName(), teacherRegisterDTO.getPersonalEmail());
+            return new Teacher(teacherRegisterDTO.getPersonalId(), teacherRegisterDTO.getName(), teacherRegisterDTO.getPersonalEmail(), teacherRegisterDTO.getPassword());
         } catch (MapException e) {
             throw new MapException(ConstantMessages.MAP_ERROR);
         }

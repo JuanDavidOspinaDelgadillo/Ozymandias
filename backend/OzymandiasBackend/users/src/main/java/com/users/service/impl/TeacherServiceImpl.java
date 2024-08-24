@@ -1,5 +1,6 @@
 package com.users.service.impl;
 
+import com.users.model.DTO.LoginDTO;
 import com.users.model.DTO.teacher.TeacherRegisterDTO;
 import com.users.model.DTO.teacher.TeacherViewDTO;
 import com.users.model.converter.TeacherConverter;
@@ -18,7 +19,7 @@ public class TeacherServiceImpl implements ITeacherService {
 
 
     @Override
-    public String login(String email, String password) {
+    public String login(LoginDTO loginDTO) {
         return "Login Successfully";
     }
 

@@ -47,7 +47,7 @@ public class Teacher {
     private Director director;
 
     // Constructor for quick initialization
-    public Teacher(String personalId, String name, String personalEmail) {
+    public Teacher(String personalId, String name, String personalEmail, String password) {
         this.personalId = personalId;
         this.name = name;
         this.personalEmail = personalEmail;

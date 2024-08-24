@@ -1,5 +1,6 @@
 package com.users.service.impl;
 
+import com.users.model.DTO.LoginDTO;
 import com.users.model.DTO.director.DirectorRegisterDTO;
 import com.users.model.DTO.director.DirectorViewDTO;
 import com.users.model.DTO.teacher.TeacherViewDTO;
@@ -25,7 +26,7 @@ public class DirectorServiceImpl implements IDirectorService {
     final DirectorConverter converter;
 
     @Override
-    public String login(String email, String password) {
+    public String login(LoginDTO loginDTO) {
         return "Login Successfully";
     }
 
