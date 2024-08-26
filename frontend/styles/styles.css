@@ -1,0 +1,76 @@
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+.login-div {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    padding-top: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    height: 100vh; 
+    text-align: center;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#login-image {
+    width: 100%; /* Ocupa la mitad derecha */
+    display: flex;
+    float: left;
+    justify-content: initial; /* Centra horizontalmente la imagen */
+    align-items: center; /* Centra verticalmente la imagen */
+    max-width: max-content;
+    max-height: max-content;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    align-items: first baseline;
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: none;
+    border: none;
+    color: rgb(237, 74, 107);
+    font-size: 30px;
+    cursor: pointer; 
+    padding: 0;
+}
+
+p {
+    margin-top: 20px;
+}
